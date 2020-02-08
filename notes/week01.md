@@ -119,3 +119,69 @@ we can find the minimum at theta1 = 1.
 or contour plot/contour figure
 
 ![image-20200208093247189](E:\2019-2020 Spring\Machine Learning\notes\img\image-20200208093247189.png)
+
+# Parameter Learning
+
+## Gradient Descent
+
+an algorithm to find the minimizer of the cost function J
+
+it can apply to more general continuous functions
+
+- choose initial point (theta0(0), theta1(0))
+- change the value of the parameters in each iteration which guarantees a declination in the cost function. to be specific, choose the direction in which the function value decreases fastest, or namely, the opposite of its gradient's direction. in each iteration, simultaneously update both parameters.
+- repeat until convergence
+
+![image-20200208095535180](E:\2019-2020 Spring\Machine Learning\notes\img\image-20200208095535180.png)
+
+rmk: 
+
+1. ":=" stands for assignment, "=" stands for assertion
+
+2. alpha stands for the learning rate
+
+3. simultaneous update: ![image-20200208100024049](E:\2019-2020 Spring\Machine Learning\notes\img\image-20200208100024049.png)
+
+   (think about the difference between Jacobi iteration and G-S iteration.)
+
+## Intuition
+
+- gradient > 0 or gradient < 0 for a variable
+- choice of alpha (consequence where it's chosen too large or too small)
+- end of iteration: approach a local optimum
+- convergence: gradient descent algorithm can converge to a local minimum, even with the learning rate alpha fixed, since it will automatically take smaller steps as absolute derivative decreases.
+
+## Application: Gradient Descent For Linear Regression
+
+- simple calculation
+
+![image-20200208102831523](E:\2019-2020 Spring\Machine Learning\notes\img\image-20200208102831523.png)
+
+![image-20200208102919208](E:\2019-2020 Spring\Machine Learning\notes\img\image-20200208102919208.png)
+
+- **fact**: cost functions for linear regression are convex function (bowl-shaped), which means it contains a unique local optimizer
+
+- <u>**"Batch" Gradient Descent**</u>: "Batch": each step of gradient descent uses all the training examples.
+
+# Linear Algebra Review
+
+- matrices and vectors
+
+  ![image-20200208105515982](E:\2019-2020 Spring\Machine Learning\notes\img\image-20200208105515982.png)
+
+- addition and multiplication (scalar)
+
+  ![image-20200208105900059](E:\2019-2020 Spring\Machine Learning\notes\img\image-20200208105900059.png)
+
+- solving linear equation:
+
+  ![image-20200208110221250](E:\2019-2020 Spring\Machine Learning\notes\img\image-20200208110221250.png)
+
+- matrix * vector; matrix * matrix
+
+- A * B != B * A, (A * B) * C == A * (B * C)
+
+- inverse and transpose
+
+  ![image-20200208110903682](E:\2019-2020 Spring\Machine Learning\notes\img\image-20200208110903682.png)
+
