@@ -89,13 +89,33 @@ rmk: univariate: one variable
 
 ## Cost Function
 
+- definition
+
 task: choose thetas <=> minimize the cost functions
 
 cost function:  J(theta0, theta1), for example:
 
 ![image-20200208091305536](E:\2019-2020 Spring\Machine Learning\notes\img\image-20200208091305536.png)
 
-it's also called squared error function or mean squared error
+rmk: 
 
-the mean is halved 1/2 as a convenience for the computation of the gradient descent.
+1.  it's also called squared error function or mean squared error
+2. the mean is halved 1/2 as a convenience for the computation of the gradient descent
 
+- Example 1: set theta0 = 0
+
+set datasets = {(1,1),(2,2),(3,3)}
+
+the figure of J(theta 1) is:
+
+![image-20200208092524619](E:\2019-2020 Spring\Machine Learning\notes\img\image-20200208092524619.png)
+
+we can find the minimum at theta1 = 1.
+
+- Example 2: J(theta0, theta1) figure
+
+![image-20200208093211606](E:\2019-2020 Spring\Machine Learning\notes\img\image-20200208093211606.png)
+
+or contour plot/contour figure
+
+![image-20200208093247189](E:\2019-2020 Spring\Machine Learning\notes\img\image-20200208093247189.png)
