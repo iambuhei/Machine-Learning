@@ -153,7 +153,7 @@ rmk:
 
 ## Application: Gradient Descent For Linear Regression
 
-- simple calculation
+- (univariate) simple calculation
 
 ![image-20200208102831523](E:\2019-2020 Spring\Machine Learning\notes\img\image-20200208102831523.png)
 
